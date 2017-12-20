@@ -97,7 +97,7 @@ class NoteDatabase(context: Context) {
             put(CREATED_AT, note.createdAt.time)
             put(UPDATED_AT, note.updatedAt!!.time)
         }
-    } 
+    }
 
     private fun fromNotes(notes: Array<out Note>): List<ContentValues> {
         val values = ArrayList<ContentValues>()
